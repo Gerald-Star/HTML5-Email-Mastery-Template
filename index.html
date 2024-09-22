@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Email | Mastery Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+        margin: 0;
+        background-color: #d8dbdb;
+        padding: 20px;
+        font-family: 'Roboto', Arial, sans-serif; /* Google Font, Web Safe Font, sans-serif */;
+        font-size: 18px;
+        color: #565859;
+    }
+
+    .wrapper {
+        max-width: 700px;
+        margin: 0 auto;
+        background-color: #f6f6f6;
+        box-shadow: 0 0 10px #616e79;
+        border-top: 10px solid #37a28f;
+        border-radius: 5px 5px 10px 10px;
+    }
+
+    .logo {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .logo img {
+        max-width: 250px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+    /*three columns */
+
+    .three__columns-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .three-columns{
+        width: 29.3%; /* 100/3 = 33.3% */
+        padding: 5% 2% 6%;
+        text-align: center;
+        margin: 15px 0 32px;
+    }
+
+    .three-columns img {
+        max-width: 100px;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #37a28f;
+        margin: 10px 0;
+        letter-spacing: 1px;
+    }
+
+    p {
+        padding-bottom: 15px;
+        font-weight: 400;
+        color: #565859;
+        line-height: 1.5;
+    }
+
+    /* button */
+
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        letter-spacing: 1px;
+        background-color: #37a28f;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .btn:hover {
+        background-color: #2e7c6e;
+        color: #fff;
+    }
+
+    /* hr orange */
+
+    hr.orange {
+        border: 0;
+        height: 3px;
+        background-image: linear-gradient(to right, rgba(55, 162, 143, 0), #a11040, rgba(55, 162, 143, 0));
+        margin: 20px;
+    }
+
+    /* two columns */
+
+    .two__column-contents {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .two-columns {
+        width: 45%; 
+        padding: 5% 2%;
+        text-align: center;
+        margin: 10px 0 32px;
+    }
+  
+    .two-columns img {
+        max-width: 100%;
+    }
+
+    .two-columns h2 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #37a28f;
+        margin: 0;
+        letter-spacing: 1px;
+    }
+
+    hr.grey__line {
+        border: 0;
+        height: 3px;
+        background-color: linear-gradient(to right, rgba(55, 162, 143, 0), #c72052, rgba(55, 162, 143, 0));;
+        margin: 5px;
+    }
+
+    /* two columns second */
+
+
+    /* footer */
+
+    .contact-us p {
+        text-align: center;
+        padding: 20px;
+    }
+
+    ul.social {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        list-style-type: none;
+        width: 96%;
+        margin: 20px 0 5px;
+    }
+
+    ul.social li {
+       display: inline;
+    }
+
+    .social img {
+        max-width: 30px;
+        margin: 0 10px;
+    }
+
+
+    .contact {
+        text-align: center;
+        color: #a11040;
+        padding-bottom: 10px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .contact a {
+        color: #a11040;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+
+    .contact a:hover {
+        color: #37a28f;
+    }
+
+    .contact a:visited {
+        color: #a11040;
+    }
+
+    .contact a:visited:hover {
+        color: #37a28f;
+    }
+
+    .contact a:active {
+        color: #37a28f;
+    }
+
+    .contact a:active:hover {
+        color: #a11040;
+    }
+
+    /* media queries */
+
+    @media screen and (max-width: 600px) {
+        body {
+            padding: 5px;
+        }
+        .banner {
+             margin-bottom: 20px;
+             max-width: 100%;
+           
+        }
+        .three-columns, .two-columns {
+            width: 96%;
+            margin: 0 0 35px;
+        }
+        .three-columns img {
+            max-width: 155px;
+        }
+        .two__column-contents {
+            flex-direction: column;
+        }
+    }
+
+
+
+  </style>
+
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <!-- logo -->
+        <div class="logo">
+             <a href="https://example.com" target="_blank"> <img src="https://i.ibb.co/JtckNqn/logo.png" alt="HTML5 logo" title="HTML5 logo"></a>
+
+        </div>
+
+        <!-- banner -->
+
+         <a href="https://example.com" target="_blank"><img src="https://i.ibb.co/zQ558kP/banner.png" alt="Banner" title="Banner" class="banner"></a>
+     
+
+        <!-- three columns 1-->
+         <div class="three__columns-content">
+            <div class="three-columns">
+                 <a href="https://example.com" target="_blank"><img src="https://i.ibb.co/42MJn1V/phone.png" alt="Phone" title="Phone"></a>
+                 <h2>Mobile Friendly</h2>
+                 <p>Most emails are opened on mobile devices today, so make sure your design is mobile friendly.</p>
+            <div class="button-holder">
+                <a href="https://example.com" target="_blank" class="btn">HTML Email</a>
+             </div>
+         </div>
+
+          <!-- three columns 2-->
+
+        <div class="three-columns">
+            <a href="https://example.com" target="_blank"> <img src="https://i.ibb.co/RD0sR6V/computer.png" alt="Computer" title="Computer" > </a>
+            <h2>Desktop Client</h2>
+            <p>Make sure your email looks good in desktop clients like Outlook, Thunderbird, and Apple Mail.</p>
+            <div class="button-holder">
+                <a href="https://example.com" target="_blank" class="btn">Development</a>
+             </div>
+        </div>
+
+
+        <!-- three columns 3-->
+
+        <div class="three-columns">
+            <a href="https://example.com" target="_blank"> <img src="https://i.ibb.co/tHQy3gL/mouse.png" alt="Mouse" title="Mouse" > </a>
+            <h2>Webmail</h2>
+            <p>Test your email in webmail clients like Gmail, Yahoo, and Outlook.com.
+                Best for email A/B marketing.
+            </p>
+            <div class="button-holder">
+                <a href="https://example.com" target="_blank" class="btn">Email Testing</a>
+             </div>
+        </div>     
+       </div>
+
+         <!-- End of three-columns -->
+          
+         <hr class="orange">
+
+         <!-- two columns -->
+
+        <div class="two__column-contents">
+
+            <div class="two-columns">
+                <a href="https://example.com" target="_blank"><img src="https://i.ibb.co/NKdYy92/pie-chart.png" alt="Pie Chart" title="Pie Chart"></a>
+            </div>
+
+
+            <div class="two-columns second">
+                <h2>Latest Email Design</h2>
+                <p>There are a lot of email clients to consider when choosing a design width but 600px is the most common.</p>
+                <div class="button-holder">
+                    <a href="https://example.com" target="_blank" class="btn">Email Design Course</a>
+                 </div>
+
+            </div>
+
+        </div>  
+        
+        <hr class="orange">
+
+        <div class="contact-us">
+            <p>Need help with your email design? <a href="https://example.com" target="_blank">Contact us</a> today.</p>
+        </div> 
+
+
+        <!-- footer -->
+
+        <ul class="social">
+         <li><a href="https://example.com" target="_blank"><img src="https://i.ibb.co/5cp6Gtb/facebook.png" alt="Facebook" title="Facebook"></a></li>
+         <li><a href="https://example.com" target="_blank"><img src="https://i.ibb.co/m4PgXq6/twitter.png" alt="Twitter" title="Twitter"></a></li>
+         <li><a href="https://example.com" target="_blank"><img src="https://i.ibb.co/Ttf0YmH/youtube.png" alt="YouTube" title="YouTube"></a></li>
+         <li><a href="https://example.com" target="_blank"><img src="https://i.ibb.co/8brZJJt/instagram.png" alt="Instagram" title="Instagram"></a></li>
+         <li><a href="https://example.com" target="_blank"><img src="https://i.ibb.co/3zn6mW3/linkedin.png" alt="Linkedin" title="Linkedin"></a></li>
+      </ul>
+
+      <p class="contact">
+         <a href="https://example.com" target="_blank">www.myportfolio.com</a><br>
+         <a href="tel:+18005555555">1-800-555-5555</a><br>
+         <a href="mailto:name@myportfolio.com">name@myportfolio.com</a><br>
+         2 Town Road - City - State 99999<br>
+         <a href="https://example.com" target="_blank">Unsubscribe</a> | 
+         <a href="https://example.com" target="_blank">Preferences</a><br>
+      </p>
+    
+    </div>
+    
+</body>
+</html>
